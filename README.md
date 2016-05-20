@@ -1,7 +1,6 @@
-# stm32
-stm32注意点
+# stm32  注意点
 
-（1）printf重载
+## printf重载  
 1.在头文件中包含"stdio.h"
 
 /* Includes ------------------------------------------------------------------*/
@@ -9,7 +8,7 @@ stm32注意点
 
 /#include "stdio.h"
 
-2.宏定义
+2.宏定义       
 
 /* Private function prototypes -----------------------------------------------*/
 /#ifdef __GNUC__
@@ -25,6 +24,7 @@ stm32注意点
 如果__GNUC__ 在之前没有被定义过，则执行#define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)；
 
 3.定义PUTCHAR_PROTOTYPE
+
 
 /**
   * @brief  Retargets the C library printf function to the USART.
