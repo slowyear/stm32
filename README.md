@@ -41,11 +41,7 @@ PUTCHAR_PROTOTYPE
 }
 
 这里是实现printf功能的，其中UartHandle可以修改为你所设置的串口号，当然HAL_UART_Transmit也是可以修改的。
-
 4.在主函数中使用printf
 
   /* Output a message on Hyperterminal 超级终端 using printf function */
   printf("\n\r UART Printf Example: retarget the C library printf function to the UART\n\r");
-
-
-  ## nather
